@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>Maturitas</title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">    
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+
+    <script src="assets/js/chart-master/Chart.js"></script>
+    
+  </head>
+
+  <body>
+
+  <section id="container" >
+      <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+      <!--header start-->
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Menü"></div>
+              </div>
+            <!--logo start-->
+            <a href="index.html" class="logo"><b>Maturitas</b></a>
+            <!--logo end-->
+
+            <div class="top-menu">
+            	<ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="login.html">Abmelden</a></li>
+            	</ul>
+            </div>
+        </header>
+      <!--header end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	  <p class="centered"><a href="account.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+              	  <h5 class="centered">Name User</h5>
+              	  	
+                  <li class="mt">
+                      <a href="index.html">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Übersicht</span>
+                      </a>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-calendar"></i>
+                          <span>Kalender</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="kalender.html">Kalender</a></li>
+                          <li><a  href="heute.html"> heutige Termine</a></li>
+                          <li><a  href="termin_hinzufuegen.html">Termin hinzufügen</a></li>
+						  <li><a  href="vergangene_termine.html">vergangene Termine</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-book"></i>
+                          <span>Planen</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="erstellte_Termine.html">erstellte Termine</a></li>
+                          <li><a  href="anfragen.html">Terminanfragen</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a class="active" href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Einstellungen</span>
+                      </a>
+                      <ul class="sub">
+                          <li class="active"><a  href="account.html">Account</a></li>
+                      </ul>
+                  </li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+          	<h3><i class="fa fa-angle-right"></i> Account</h3>
+          	
+          	<!-- BASIC FORM ELELEMNTS -->
+          	<div class="row mt">
+          		<div class="col-lg-12">
+                  <div class="form-panel">
+                  	  <h4 class="mb"><i class="fa fa-angle-right"></i> Benutzername ändern</h4>
+                      <form class="form-horizontal style-form" method="get" action="index.html">
+						  <div class="form-group">
+                              <label class="col-lg-2 col-sm-2 control-label">Benutzername</label>
+                              <div class="col-lg-10">
+                                  <p class="form-control-static">Benutzername</p>
+                              </div>
+                          </div>						  
+
+                       	  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">neuer Benutzername</label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control">
+                              </div>
+                          </div>
+						  <div>
+							<br>
+						  </div>
+						  
+						  <h4 class="mb"><i class="fa fa-angle-right"></i> Passwort ändern</h4>
+						  
+						  <div class="form-group">
+                              <label class="col-lg-2 col-sm-2 control-label">altes Passwort</label>
+                              <div class="col-sm-10">
+                                  <input type="password"  class="form-control" placeholder="">
+                              </div>
+                          </div>
+
+                       	  <div class="form-group">
+                              <label class="col-lg-2 col-sm-2 control-label">neues Passwort</label>
+                              <div class="col-sm-10">
+                                  <input type="password"  class="form-control" placeholder="">
+                              </div>
+                          </div>
+						  
+						  <div class="form-group">
+                              <label class="col-lg-2 col-sm-2 control-label">Passwort wiederholen</label>
+                              <div class="col-sm-10">
+                                  <input type="password"  class="form-control" placeholder="">
+                              </div>
+                          </div>
+						  <div>
+							<br>
+						  </div>
+						  
+						  <h4 class="mb"><i class="fa fa-angle-right"></i> E-Mail-Adresse ändern</h4>
+						  <div class="form-group">
+                              <label class="col-lg-2 col-sm-2 control-label">aktuelle E-Mail-Adresse</label>
+                              <div class="col-lg-10">
+                                  <p class="form-control-static">aktuelle E-Mail-Adresse</p>
+                              </div>
+                          </div>						  
+
+                       	  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">neue E-Mail-Adresse</label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control">
+                              </div>
+                          </div>	
+						  <button class="btn btn-theme btn-lg btn-block" href="index.html" type="submit">Speichern</button>							  
+						  
+				  </div>		
+          		</div><!-- col-lg-12-->     				
+          	</div><!-- /row -->
+
+      <!--main content end-->
+
+  </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+
+
+    <!--common script for all pages-->
+    <script src="assets/js/common-scripts.js"></script>
+
+    <!--script for this page-->
+    <script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
+
+	<!--custom switch-->
+	<script src="assets/js/bootstrap-switch.js"></script>
+	
+	<!--custom tagsinput-->
+	<script src="assets/js/jquery.tagsinput.js"></script>
+	
+	<!--custom checkbox & radio-->
+	
+	<script type="text/javascript" src="assets/js/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap-daterangepicker/date.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap-daterangepicker/daterangepicker.js"></script>
+	
+	<script type="text/javascript" src="assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+	
+	
+	<script src="assets/js/form-component.js"></script>    
+    
+    
+  <script>
+      //custom select box
+
+	  $(function(){
+			window.prettyPrint && prettyPrint();
+			$('#dp1').datepicker({
+				format: 'mm-dd-yyyy'
+			});
+			$('#dp2').datepicker();
+
+        // disabling dates
+        var nowTemp = new Date();
+        var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+
+        var checkin = $('#dpd1').datepicker({
+          onRender: function(date) {
+            return date.valueOf() < now.valueOf() ? 'disabled' : '';
+          }
+        }).on('changeDate', function(ev) {
+          if (ev.date.valueOf() > checkout.date.valueOf()) {
+            var newDate = new Date(ev.date)
+            newDate.setDate(newDate.getDate() + 1);
+            checkout.setValue(newDate);
+          }
+          checkin.hide();
+          $('#dpd2')[0].focus();
+        }).data('datepicker');
+        var checkout = $('#dpd2').datepicker({
+          onRender: function(date) {
+            return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+          }
+        }).on('changeDate', function(ev) {
+          checkout.hide();
+        }).data('datepicker');
+		});
+
+	  
+      $(function(){
+          $('select.styled').customSelect();
+      });
+
+  </script>
+
+  </body>
+</html>
